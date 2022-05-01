@@ -1,0 +1,20 @@
+{
+  "author": "iamziike",
+  "manifest_version": 3,
+  "name": "Storage Bucket2",
+  "description": "Bookmark your favourite locations",
+  "version": "1.0.0",
+  "icons": {
+    "16": "./assets/images/icon_16.png",
+    "48": "./assets/images/icon_48.png",
+    "128": "./assets/images/icon_128.png"
+  },
+  "action": {
+    "default_popup": "./popup/popup.html",
+    "default_icon": {
+      "16": "./assets/images/icon_16.png",
+      "48": "./assets/images/icon_48.png",
+      "128": "./assets/images/icon_128.png"
+    }
+  }
+}

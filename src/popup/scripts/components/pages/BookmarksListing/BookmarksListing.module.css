@@ -1,0 +1,23 @@
+.bookmarkList {
+  height: 100vh;
+}
+
+.bookmarkList > * {
+  padding: var(--sm-space);
+}
+
+.bookmarkList__header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: var(--white);
+}
+
+.filtersort {
+  margin-top: var(--sm-space);
+}
+
+.bookmarkList__main {
+  padding-top: 0;
+}

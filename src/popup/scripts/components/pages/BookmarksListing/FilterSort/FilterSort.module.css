@@ -1,0 +1,55 @@
+.filtersort {
+  position: relative;
+  display: grid;
+  text-align: center;
+  color: var(--white);
+  font-family: var(--ff-semi-bd);
+  /* padding-bottom: var(--sm-space); */
+}
+
+.filtersort::after {
+  content: '';
+  background-color: var(--light-red);
+  color: var(--light-red);
+  margin: 0 auto;
+  height: 2px;
+  margin-top: var(--sm-space);
+  border-radius: var(--sm-bd-radius);
+  width: 90%;
+}
+
+.filtersort > * {
+  background-color: var(--light-red);
+  padding: var(--sm-space);
+}
+
+.filtersort__controls {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0;
+  border-top-left-radius: var(--sm-bd-radius);
+  border-top-right-radius: var(--sm-bd-radius);
+}
+
+.filtersort__controls > * {
+  cursor: pointer;
+}
+
+.filtersort__current-action {
+  padding-top: 0;
+  border-bottom-left-radius: var(--sm-bd-radius);
+  border-bottom-right-radius: var(--sm-bd-radius);
+}
+
+.filterSort__options {
+  border-radius: var(--sm-bd-radius);
+  margin-top: calc(var(--sm-space));
+  overflow: hidden;
+  padding: 0;
+  background-color: transparent;
+}
+
+.filterSort__options button {
+  border-radius: var(--sm-bd-radius);
+  background-color: var(--light-grey);
+}

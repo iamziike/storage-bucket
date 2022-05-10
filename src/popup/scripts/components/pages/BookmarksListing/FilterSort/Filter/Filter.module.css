@@ -1,0 +1,34 @@
+.filter__choices-controls {
+  background-color: var(--light-red);
+  height: max-content;
+}
+
+.filter__choices,
+.filter__choices-controls {
+  border-radius: var(--sm-bd-radius);
+  overflow: hidden;
+}
+
+.filter__choices-controls > * {
+  width: 100%;
+  display: block;
+}
+
+.filter__choices {
+  margin-top: calc(var(--sm-space));
+  background-color: var(--grey);
+  display: flex;
+  align-items: center;
+  height: 51px;
+}
+
+.filter__choices--inputbox,
+.filter__choices--inputbox input {
+  background-color: transparent;
+  color: var(--light-red);
+  caret-color: var(--light-red);
+}
+
+.filter__choices--keywords {
+  background-color: var(--grey);
+}

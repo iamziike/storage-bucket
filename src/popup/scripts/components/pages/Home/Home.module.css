@@ -1,0 +1,119 @@
+/* header */
+.header__top,
+.nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--df-gap);
+}
+
+.header__msg {
+  border-bottom-left-radius: 0 !important;
+  pointer-events: none;
+}
+
+.header__msg,
+.header__btn {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+.nav {
+  width: max-content;
+  margin-left: auto;
+}
+
+.header__btn {
+  width: max-content !important;
+}
+
+.header__btn--creator {
+  border-bottom-right-radius: 0 !important;
+}
+
+.header__btn--settings {
+  pointer-events: none;
+}
+
+.logo-wrapper {
+  margin: 10px auto 10px;
+  text-align: center;
+  width: max-content;
+  padding: var(--pad);
+}
+
+/* main */
+.main {
+  width: 70%;
+  margin: var(--df-space) auto;
+  display: grid;
+  text-align: center;
+}
+
+.counter {
+  font-size: calc(var(--fs-xlg) * 2) !important;
+  justify-content: center;
+}
+
+.bucket {
+  display: flex;
+  align-items: flex-end;
+  height: 48%;
+}
+
+.bucket img {
+  width: 15px;
+}
+
+.counter-label {
+  display: block;
+  margin: var(--md-space) 0 0;
+  font-family: var(--ff-bd);
+}
+
+/* footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: var(--sm-space) var(--pad-y);
+  margin-top: 30px;
+  background-color: var(--light-red);
+  justify-content: end;
+}
+
+.why {
+  position: relative;
+  width: max-content;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.why::after {
+  position: absolute;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  top: 0;
+  right: 130%;
+  color: var(--white);
+  content: '';
+  pointer-events: none;
+  opacity: 0;
+  transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.why:hover::after {
+  opacity: 1;
+  animation: changer 5s both;
+}
+
+@keyframes changer {
+  0% {
+    content: 'Why did I build this,';
+  }
+
+  100% {
+    content: 'well who knows 🤔🤔🤔🤔🤔🤔';
+  }
+}

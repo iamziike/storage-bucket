@@ -1,0 +1,27 @@
+.sort {
+  display: flex;
+  gap: var(--sm-space);
+  background-color: transparent;
+}
+
+.sort__options {
+  justify-content: space-between;
+  background-color: var(--light-red);
+  padding: var(--sm-space);
+}
+
+.sort__direction {
+  display: flex;
+  align-items: center;
+  padding: var(--sm-space);
+  background-color: var(--light-red);
+  cursor: pointer;
+}
+
+.sort__direction img {
+  transition: transform 0.5s;
+}
+
+.sort__direction--desc img {
+  transform: rotate(180deg);
+}

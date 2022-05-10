@@ -1,0 +1,12 @@
+.buttons {
+  display: flex;
+  gap: calc(var(--df-gap) + 4px);
+  width: 100%;
+  padding: var(--sm-space);
+  background-color: var(--light-grey);
+}
+
+.button {
+  white-space: nowrap;
+  width: max-content;
+}

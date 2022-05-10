@@ -1,0 +1,58 @@
+:root {
+  --light-red: hsl(0, 85%, 66%);
+  --dark-red: hsl(0, 85%, 58%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 90%);
+  --light-grey: hsl(0, 0%, 95%);
+  --dark-grey: hsl(0, 0%, 85%);
+  --black: hsl(0, 0%, 0%);
+  --transparent-black: hsl(0, 0%, 0%, 0.7);
+  --paleblack: hsl(0, 0%, 20%);
+
+  /* font-family */
+  --ff-black: MontserratAlternates_Black;
+  --ff-extra-light: MontserratAlternates_Black;
+  --ff-light: MontserratAlternates_Light;
+  --ff-reg: MontserratAlternates_Regular;
+  --ff-md: MontserratAlternates_Medium;
+  --ff-semi-bd: MontserratAlternates_SemiBold;
+  --ff-bd: MontserratAlternates_Bold;
+
+  /* font-size  */
+  --fs-xsm: 0.6rem;
+  --fs-sm: 0.8rem;
+  --fs-df: 1rem;
+  --fs-md: 1.2rem;
+  --fs-lg: 1.5rem;
+  --fs-xlg: 2rem;
+
+  /* spacing */
+  --sm-space: 10px;
+  --md-space: 20px;
+  --df-space: 30px;
+
+  /* layout */
+  --pad-x: 30px;
+  --pad-y: 20px;
+  --pad: var(--pad-x) var(--pad-y);
+
+  /* structure */
+  --popup-width: 400px;
+  --popup-height: 500px;
+
+  --layout-width: 95%;
+
+  /* others */
+  --xsm-gap: 3px;
+  --sm-gap: 5px;
+  --df-gap: 10px;
+  --md-gap: 20px;
+  --lg-gap: 30px;
+  --xlg-gap: 40px;
+
+  /* others */
+  --sm-bd-radius: 5px;
+  --df-bd-radius: 10px;
+  --md-bd-radius: 20px;
+  --lg-bd-radius: 30px;
+}

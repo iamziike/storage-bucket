@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+*::selection {
+  color: var(--white);
+  background-color: var(--light-red);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+img,
+svg {
+  vertical-align: bottom;
+}

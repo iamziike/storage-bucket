@@ -1,0 +1,7 @@
+body {
+  position: relative;
+  width: var(--popup-width);
+  height: var(--popup-height);
+  color: var(--light-red);
+  font-family: var(--ff-md), sans-serif;
+}

@@ -1,0 +1,4 @@
+.inputbox input {
+  padding: var(--sm-space);
+  width: 100%;
+}

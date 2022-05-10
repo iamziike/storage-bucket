@@ -8,6 +8,7 @@
     "plugin:react/recommended",
     "plugin:react/jsx-runtime"
   ],
+  "globals": { "chrome": true },
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -20,6 +21,7 @@
     "indent": ["error", 2],
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "single"],
-    "semi": ["error", "always"]
+    "semi": ["error", "always"],
+    "react/prop-types": "warn"
   }
 }

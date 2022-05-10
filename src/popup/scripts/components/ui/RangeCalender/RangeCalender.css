@@ -1,0 +1,74 @@
+.react-datetimerange-picker {
+  width: 100%;
+  padding: var(--sm-space);
+  background-color: var(--light-red);
+  border-radius: var(--sm-bd-radius);
+}
+
+.react-datetimerange-picker__wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: var(--df-gap);
+  flex-wrap: wrap;
+  border: none;
+}
+
+/* all the calender children (calender ranges & buttons) */
+.react-datetimerange-picker__wrapper > * {
+  height: max-content;
+  padding: var(--sm-space);
+  border-radius: var(--sm-bd-radius);
+}
+
+/* span in between two calender ranges */
+.react-datetimerange-picker__range-divider {
+  display: none;
+}
+
+/* calender-ranges */
+.react-datetimerange-picker__inputGroup {
+  background-color: var(--dark-red);
+  width: calc(50% - var(--df-gap) / 2);
+}
+
+/* calender-ranges inputs */
+.react-datetimerange-picker__inputGroup__input {
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* options within select element */
+.react-datetimerange-picker__inputGroup select option {
+  background-color: var(--light-red);
+}
+
+/* calender children buttons*/
+.react-datetimerange-picker__button {
+  background-color: var(--white);
+}
+
+.react-datetimerange-picker__button:enabled:hover
+  .react-datetimerange-picker__button__icon,
+.react-datetimerange-picker__button:enabled:focus
+  .react-datetimerange-picker__button__icon {
+  stroke: var(--light-red);
+}
+
+/* calender designs */
+.react-datetimerange-picker__calendar--open,
+.react-datetimerange-picker__clock--open {
+  width: 100%;
+  margin-top: var(--sm-space);
+  border-radius: var(--sm-bd-radius);
+  overflow: hidden;
+}
+
+.react-datetimerange-picker__calendar--open .react-calendar {
+  width: 100%;
+}
+
+.react-datetimerange-picker__clock--open {
+  display: flex;
+  place-content: center;
+}

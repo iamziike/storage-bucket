@@ -1,0 +1,34 @@
+@font-face {
+  font-family: MontserratAlternates_Black;
+  src: url('/src/assets/fonts/MontserratAlternates/MontserratAlternates-Black.ttf');
+}
+
+@font-face {
+  font-family: MontserratAlternates_ExtraLight;
+  src: url('/src/assets/fonts/MontserratAlternates/MontserratAlternates-ExtraLight.ttf');
+}
+
+@font-face {
+  font-family: MontserratAlternates_Thin;
+  src: url('/src/assets/fonts/MontserratAlternates/MontserratAlternates-Thin.ttf');
+}
+
+@font-face {
+  font-family: MontserratAlternates_Regular;
+  src: url('/src/assets/fonts/MontserratAlternates/MontserratAlternates-Regular.ttf');
+}
+
+@font-face {
+  font-family: MontserratAlternates_Medium;
+  src: url('/src/assets/fonts/MontserratAlternates/MontserratAlternates-Medium.ttf');
+}
+
+@font-face {
+  font-family: MontserratAlternates_SemiBold;
+  src: url('/src/assets/fonts/MontserratAlternates/MontserratAlternates-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: MontserratAlternates_Bold;
+  src: url('/src/assets/fonts/MontserratAlternates/MontserratAlternates-Bold.ttf');
+}

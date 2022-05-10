@@ -1,0 +1,64 @@
+/* logo takes its parent full avail width*/
+.logo__wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+/* invisible scrollbar */
+.no-visible-scrollbar {
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  height: 100%;
+}
+
+.no-visible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* visibility */
+.visibility {
+  transition: opacity 0.5s;
+}
+
+.no-visibility {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.box-shadow {
+  box-shadow: hsla(0, 0%, 0%, 0.5) 0px 2px 4px,
+    hsla(0, 0%, 0%, 0.4) 0px 7px 5px -3px,
+    hsla(0, 0%, 0%, 0.3) 0px -3px 0px inset;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.box-shadow:hover {
+  transform: scale(1.15);
+}
+.box-shadow:active {
+  transform: scale(1.2);
+}
+
+/* flex */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+/* structure */
+.no-space {
+  padding: 0 !important;
+  border: 0 !important;
+  margin: 0 !important;
+  outline: none !important;
+}
+
+.error--border {
+  outline: solid 1px var(--light-red);
+}

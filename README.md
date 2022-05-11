@@ -4,7 +4,7 @@
 
 ## Future Features
 
-more features will be added sooon!
+more features will be added soon!
 
 ## To run locally
 

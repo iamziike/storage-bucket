@@ -38,3 +38,7 @@ export const KEYWORDS = 'keywords';
 // sorting "direction"
 export const ASC = 'ASC';
 export const DESC = 'DESC';
+
+//
+export const LOWER_CASE = 'LOWER_CASE';
+export const UPPER_CASE = 'UPPER_CASE';

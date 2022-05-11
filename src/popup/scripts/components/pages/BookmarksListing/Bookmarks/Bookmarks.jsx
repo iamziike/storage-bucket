@@ -11,6 +11,7 @@ import {
   DATE_CREATED,
   KEYWORDS,
   LAST_COPIED,
+  LOWER_CASE,
   TITLE,
   URL_LOCALE,
 } from '../../../../helpers/constants';
@@ -18,7 +19,7 @@ import {
   remove as removeBookmark,
   update as updateBookmarks,
 } from '../../../../store/bookmarks/bookmarksSlice';
-import { copyToClipboard } from '../../../../helpers/utils';
+import { changeLetterCase, copyToClipboard } from '../../../../helpers/utils';
 
 const Bookmarks = ({ sortingConstraint, filterConstraint }) => {
   const dispatch = useDispatch();
@@ -56,8 +57,18 @@ const Bookmarks = ({ sortingConstraint, filterConstraint }) => {
       date: filteredDate,
     } = filterConstraint.responses;
 
-    if (!bookmark[TITLE].includes(filteredTitle || '')) return false;
-    if (!bookmark[URL_LOCALE].includes(filteredURL || '')) return false;
+    if (
+      !changeLetterCase(bookmark[TITLE], LOWER_CASE).includes(
+        filteredTitle?.toLowerCase() || ''
+      )
+    )
+      return false;
+    if (
+      !changeLetterCase(bookmark[URL_LOCALE], LOWER_CASE).includes(
+        filteredURL?.toLowerCase() || ''
+      )
+    )
+      return false;
     if (
       filteredDate &&
       !(

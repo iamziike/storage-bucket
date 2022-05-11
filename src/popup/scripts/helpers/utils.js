@@ -1,3 +1,5 @@
+import { UPPER_CASE } from './constants';
+
 export const attachPathName = (string = '') => `${location.pathname}/${string}`;
 
 export const getSanitizedWord = (word) => word.replace(/\s+/gi, ' ').trim();
@@ -44,3 +46,13 @@ export const areArraysSame = (first, second) => {
 };
 
 export const getDistinctList = (list) => [...new Set(list)];
+
+export const changeLetterCase = (values, type) => {
+  if (values.constructor === String)
+    return type === UPPER_CASE ? values.toUpperCase() : values.toLowerCase();
+  else if (values.constructor === Array)
+    return values.map((value) =>
+      type === UPPER_CASE ? value.toUpperCase() : value.toLowerCase()
+    );
+  return values;
+};
